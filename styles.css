@@ -1,0 +1,245 @@
+* {
+    font-size: 20px;
+    font-family: "manrope";
+    color: hsl(225, 20%, 60%);
+    letter-spacing: 1.2px;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background: url(./images/bg-pattern.svg) no-repeat hsl(230, 100%, 99%);
+}
+
+.header {
+    background: url(./images/pattern-circles.svg) no-repeat center;
+    height: 200px;
+    text-align: center;
+}
+
+.header > h3 {
+    font-size: 40px;
+    color: hsl(227, 35%, 25%)
+}
+
+.pricing-main {
+    background: white;
+    border-radius: 9px;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 0px 0px 20px hsla(225, 20%, 60%, 0.12);
+}
+
+
+
+.main {
+    border-bottom: 1px solid hsla(225, 20%, 60%, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.pageview-head {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 700
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 90%;
+    height: 10px;
+    background: linear-gradient(to right, hsl(174, 77%, 80%) 50%, hsl(224, 65%, 95%) 50%);
+    outline: none;
+    border-radius: 7px; 
+    appearance: none;   
+}
+
+.slider::-webkit-slider-runnable-track {
+    height: 10px;
+    border-radius: 7px; 
+    
+    
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    cursor: pointer;
+    appearance: none;
+    box-shadow: 0px 10px 20px hsla(174, 86%, 45%, 0.8);
+    border-radius: 50%;
+     height: 55px;
+     margin-top: -20px;
+     width: 55px;
+    background: hsl(174, 86%, 45%) url(./images/icon-slider.svg) no-repeat center;
+}
+
+.slider::-webkit-slider-thumb:hover {
+     background-color: hsla(174, 77%, 80%, 0.9);
+     transition: 0.7s;
+}
+
+
+
+.month-amount {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:  hsl(227, 35%, 25%);
+}
+
+.togglebtn-container {
+    width: 60px;
+    height: 27px;
+    background-color: hsl(223, 50%, 87%);
+    border-radius: 20px;
+    display: flex;
+    top: 36%;
+    position: relative;
+    
+}
+
+.backgroundbtn{
+    background: hsl(174, 86%, 45%)
+}
+
+.togglebtn {
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 3px;
+    transition: 0.3s;
+}
+
+.toggleslider{
+    margin-left: 35px;
+    transition: 0.3s;
+}
+
+.billing {
+    display: flex;
+    justify-content: center;
+    width: 97%;
+    gap: 17px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+
+.monthly-billing {
+    display: flex;
+    gap: 15px;
+   
+    
+}
+
+.monthly-billing > p {
+    margin-top: 20px;
+}
+
+.yearly {
+    display: flex;
+    gap: 15px;
+  
+}
+
+.yearly > p + p  {
+    color:hsl(15, 100%, 70%) ;
+    background-color: hsla(15, 100%, 70%, 0.2);
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 40px;
+    border-radius: 20px;
+}
+
+
+small {
+    color:hsl(15, 100%, 70%) ;
+    display: none;
+}
+
+
+.offers > p {
+    font-size: 22px;
+}
+
+
+.offers > p > img {
+    height: 14px;
+}
+
+.btn {
+    border: none;
+    border-radius: 40px;
+    height: 70px;
+    color: rgb(223, 223, 223);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 50px 20px 50px;
+    background: hsl(227, 35%, 25%); 
+}
+
+
+.btn:hover {
+    opacity: 0.7;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 720px){
+      .pricing-main {
+          width: 700px;
+          position: relative;
+          /* top: 50%; */
+          margin-top: 280px;
+          left: 50%;
+          transform: translate(-50%,-50%)
+      }
+
+      
+       .monthly-billing > p {
+       margin-top: 30px; 
+       }
+
+       .pageview-container {
+           display: flex;
+           justify-content: space-around;
+           height: 150px;
+           line-height: 100px; 
+       }
+       
+       
+       .yearly > p {
+           margin-top: 30px;
+           margin-bottom: 0px;
+       } 
+
+       .yearly > p + p {
+           margin-top: 20px;
+       }
+
+       small {
+           display: inline-block;
+       }
+
+       .offers {
+           text-align: start;
+       }
+
+
+      .bottom {
+          display: flex;
+          justify-content: space-around ;
+          
+      }
+
+      .btn {
+          margin-top: 50px;
+      }
+}
