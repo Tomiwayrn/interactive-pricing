@@ -17,52 +17,57 @@
   </style>
 </head>
 <body>
-   <div class="header">
-    <h3>Simple, traffic-based pricing</h3>
-    <h5>Sign-up for our 30-day trial. No credit card required.</h5> 
-   </div>
- 
-  <div class="pricing-main">
-   <section class="main">  
-     <div class="pageview-container"> 
-       <p class="pageview-head"><span class="pageview">100K</span> pageviews </p>
-       <p><span class="month-amount">$16.00</span>/month</p>
-    </div>
-      <div class="slider-container">
-        <input type="range" min="1" max="36" value="" class="slider" id="range">
+  <header>
+      <div class="header">
+        <h3>Simple, traffic-based pricing</h3>
+        <h5>Sign-up for our 30-day trial. No credit card required.</h5> 
       </div>
-       
-    <div class="billing">   
-       <div class="monthly-billing">
-          <p>Monthly Billing</p>
-           <div class="togglebtn-container">
-          <div class="togglebtn">
+  </header>
+    <main>
+      <div class="pricing-main">
+      <section class="main">  
+        <div class="pageview-container"> 
+          <p class="pageview-head"><span class="pageview">100K</span> pageviews </p>
+          <p><span class="month-amount">$16.00</span>/month</p>
+        </div>
+          <div class="slider-container">
+            <input type="range" min="1" max="36" value="" class="slider" id="range">
+          </div>
+          
+        <div class="billing">   
+          <div class="monthly-billing">
+              <p>Monthly Billing</p>
+              <div class="togglebtn-container">
+              <div class="togglebtn">
+                </div>
+              </div>
             </div>
+            
+            <div class="yearly">
+              <p>Yearly Billing</p>
+              <p> +25% <small class="discount">discount</small></p>
           </div>
         </div>
         
-        <div class="yearly">
-          <p>Yearly Billing</p>
-           <p> +25% <small class="discount">discount</small></p>
-       </div>
+        </section>
+      
+        <section class="bottom">
+          <div class="offers">
+          <p> <img src="./images/icon-check.svg"> Unlimited websites</p>
+          <p> <img src="./images/icon-check.svg"> 100% data ownership </p>
+          <p> <img src="./images/icon-check.svg"> Email reports </p>
+        </div>
+          <button class="btn"> Start my trial </button>
+        </section>
     </div>
-    
-    </section>
-  
-    <section class="bottom">
-      <div class="offers">
-       <p> <img src="./images/icon-check.svg"> Unlimited websites</p>
-       <p> <img src="./images/icon-check.svg"> 100% data ownership </p>
-       <p> <img src="./images/icon-check.svg"> Email reports </p>
-     </div>
-      <button class="btn"> Start my trial </button>
-    </section>
-</div>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </main>
+  <footer>
+   
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+</footer>
   <script src="./app.js"></script>
 </body>
 </html>
